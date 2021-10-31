@@ -1,0 +1,22 @@
+{
+    "status": "ok",
+       "message": "ok",
+       "rowCount": 75,
+       "systemTime": 1605102061,
+       "data": [
+           {
+             "EczaneAdi": "Burgazada Eczanesi",
+               "Adresi": "Burgazadası Mahallesi Çınarlık Sokak 3 Burgazada / Adalar / İstanbul",
+               "Semt": "Burgazada",
+               "YolTarifi": "Burgazada Sağlık Ocağı Karşısı",
+               "Telefon": "0(216)381-21-12",
+               "Telefon2": "",
+               "Sehir": "İstanbul",
+               "ilce": "Adalar",
+               "latitude": 40.879987,
+               "longitude": 29.069194
+   
+           }
+   
+       ]
+    }
