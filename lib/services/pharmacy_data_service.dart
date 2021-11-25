@@ -5,15 +5,13 @@ import 'package:http/http.dart' as http;
 PharmacyDataService pharmacyDataService = PharmacyDataService();
 
 class PharmacyDataService {
-  
-
   Future<PharmacyModel> fetchData(url) async {
     final response = await http.get(
       Uri.parse(url),
       headers: {
         'Content-Type': 'application/json',
         'authorization':
-            'Bearer /*API_KEY*/',
+            'Bearer dqx8vRLUpB4J0D1YekGBMi7OnSaWSx4DtyuDZvXxH9jM02PJe8VnKJBMvqWx',
         'content-type': 'application/json',
       },
     );

@@ -2,8 +2,8 @@ import 'package:farmacy_app/app/core/routes/routes.dart';
 import 'package:flutter/material.dart';
 
 class TownScreen extends StatelessWidget {
-  final  city;
-  final  counties;
+  final String? city;
+  final List? counties;
 
   const TownScreen({Key? key, this.city, this.counties}) : super(key: key);
 
@@ -18,14 +18,14 @@ class TownScreen extends StatelessWidget {
           return Column(
             children: [
               ListTile(
-                onTap: () => goToPharmacy(context, counties[index], city),
-                title: Text(counties[index]),
+                onTap: () => goToPharmacyRoute(context, counties![index], city),
+                title: Text(counties![index]),
               ),
               const Divider(),
             ],
           );
         },
-        itemCount: counties.length,
+        itemCount: counties!.length,
       ),
     );
   }

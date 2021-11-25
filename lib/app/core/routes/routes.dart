@@ -1,33 +1,29 @@
-import 'package:farmacy_app/app/screens/city_screen/city_screen.dart';
-import 'package:farmacy_app/app/screens/pharmacy_screen/pharmacy_screen.dart';
-import 'package:farmacy_app/app/screens/town_screen/town_screen.dart';
 import 'package:flutter/material.dart';
+import '../../screens/town_screen/town_screen.dart';
+import '../../screens/pharmacy_screen/pharmacy_screen.dart';
+import '../../screens/city_screen/city_screen.dart';
 
-void goToTownRoute(BuildContext context, Object? il, ilceler) {
+void goToTownRoute(BuildContext context, il, ilceler) {
   Navigator.of(context).push(
     MaterialPageRoute(
-      builder: (_) {
-        return TownScreen(city: il, counties: ilceler);
-      },
+      builder: (_) => TownScreen(city: il, counties: ilceler),
     ),
   );
 }
 
-void goToPharmacy(BuildContext context, ilce, il) {
+void goToPharmacyRoute(BuildContext context, ilce, il) {
   Navigator.of(context).push(
     MaterialPageRoute(
-      builder: (_) {
-        return PharmacyScreen(city: il, county: ilce);
-      },
+      builder: (_) => PharmacyScreen(city: il, county: ilce),
     ),
   );
 }
 
-void goTo(BuildContext context, routeName) {
+void goToCityRoute(BuildContext context) {
   Navigator.push(
     context,
     MaterialPageRoute(
-      builder: (context) => const CityScreen(),
+      builder: (_) => const CityScreen(),
     ),
   );
 }

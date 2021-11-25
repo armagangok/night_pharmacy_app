@@ -11,15 +11,14 @@ class HomeScreen extends StatelessWidget {
       body: Column(
         children: [
           TextButton(
-            child: const Text("Şehir ve İlçelere Göre Eczaneler"),
+            child: const Text("Şehir ve İlçelere Göre Nöbetçi Eczaneler"),
             onPressed: () {
-
-              goTo(context, '/PharmacyScreen');
+              goToCityRoute(context);
             },
           ),
           const Divider(),
           TextButton(
-            child: const Text("Yakınımdakiler"),
+            child: const Text("En Yakınımdaki Nöbetçi Ezcaneler"),
             onPressed: () {},
           ),
         ],
